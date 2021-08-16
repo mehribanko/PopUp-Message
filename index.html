@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type='text/css'>
+        <title>
+            Welcome Message
+        </title>
+    </head>
+
+    <body>
+        <div class='output'> </div>
+        <div class='messagebox'>
+        <p>Name:</p> 
+        <input type='text' value=''>
+        <button type='button'> Message</button>
+        </div>
+        
+        <script> 
+            const output=document.querySelector('.output')
+            const button=document.querySelector('button');
+            const name=document.querySelector('input');
+
+            button.addEventListener('click', showDate);
+            function showDate(){
+                const date=new Date();
+                let cur = date.getHours();
+                let message;
+
+                if(cur>17){
+                    message='Good evening'
+                    output.style.color='purple';
+                }else if(cur>12){
+                    message='Good afternoon'
+                    output.style.color='crimson';
+                }else if(cure>0){
+                message='Good morning'
+                output.style.color='green';
+            }else{
+                message='Hello'
+                output.style.color='black';
+            }
+            
+            output.innerHTML="<h1>"+message+", "+name.value+"</h1>"; 
+            }
+
+        </script>
+
+    </body>
+</html>

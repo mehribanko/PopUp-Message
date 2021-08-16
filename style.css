@@ -1,0 +1,27 @@
+body{
+    background-color:antiquewhite;
+}
+
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.messagebox {
+    display: block;
+    margin-top: 10%;
+}
+
+.output {
+  text-align: center;
+}
